@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Week 2 Assignment</title>
+    </head>
+    <body>
+        <h2>Ordered list with roman numerals:</h2>
+        <ol type="I">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h2>Image from pexels.com</h2>
+        <img src="https://images.pexels.com/photos/8086357/pexels-photo-8086357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Stressing from assignments" width="500">
+        
+        <h2>Table with name, address, email and mobile number</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>Brooklyn Odhiambo</td>
+                <td>0745547015</td>
+                <td>brooksblur2000@gmail.com</td>
+                <td>Donholm</td>
+            </tr>
+            <tr>
+                <td>Darlene Stella</td>
+                <td>0746781457</td>
+                <td>darlenestella@gmail.com</td>
+                <td>Roysambu</td>
+            </tr>
+            <tr>
+                <td>Diane Atekhwa</td>
+                <td>0719762807</td>
+                <td>goofypencils@gmail.com</td>
+                <td>Mlolongo</td>
+            </tr>
+            <tr>
+                <td>Martin Karani</td>
+                <td>0701855316</td>
+                <td>martohkarash@gmail.com</td>
+                <td>Kamakis</td>
+            </tr>
+            <tr>
+                <td>Bartley Dawud</td>
+                <td>0707829824</td>
+                <td>bartelydawud@gmail.com</td>
+                <td>Rongai</td>
+            </tr>
+        </table>
+
+        <h2>Registration Form</h2>
+
+        <form action="submit_form.php" method="post">
+        
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+            <br><br>
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <!-- Dropdown (Country Selection) -->
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select --</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+            </select>
+            <br><br>
+
+            <!-- Radio Buttons (Gender) -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <!-- Checkboxes (Interests) -->
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+
+        </form>
+    </body>
+</html>
